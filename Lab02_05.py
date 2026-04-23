@@ -39,4 +39,13 @@ for student in students.keys():
     eligible = "Eligible for Certificate" if score >= 2 else "Not Eligible"
     if score == 0:
         print(" Warning: Score is 0! You need to study harder!")
+    print(f"Score: {score}")
+    print(f"Performance Level: {performance}")
+    print(f"Certificate Status: {eligible}")
+    print("Stars Pattern:")
+    if score > 0:
+        for i in range(score):
+            print("*" * (i + 1))
+    else:
+        print("")  
 print()
